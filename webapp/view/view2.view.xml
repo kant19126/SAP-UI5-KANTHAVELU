@@ -1,0 +1,41 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="zkanthavelu_uI5zkanthavelu_uI5.controller.view2" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="view2" showNavButton="true" navButtonPress="onback">
+				<content>
+					<Table id="idstudenttable" items="{studenttable>/student}">
+						<columns>
+							<Column width="12em">
+								<Text text="Name"/>
+							</Column>
+							<Column minScreenWidth="Tablet" demandPopin="true">
+								<Text text="Standard"/>
+							</Column>
+							<Column minScreenWidth="Desktop" demandPopin="true" hAlign="End">
+								<Text text="Section"/>
+							</Column>
+							<Column minScreenWidth="Desktop" demandPopin="true" hAlign="Center">
+								<Text text="Address"/>
+							</Column>
+							<Column hAlign="End">
+								<Text text="Contact Number"/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem vAlign="Middle">
+								<cells>
+									<Text text="{studenttable>name}"/>
+									<Text text="{studenttable>std}"/>
+									<Text text="{studenttable>sec}"/>
+									<Text text="{studenttable>addr}"/>
+									<Text text="{studenttable>ph}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

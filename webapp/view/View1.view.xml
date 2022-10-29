@@ -1,0 +1,59 @@
+<mvc:View controllerName="zkanthavelu_uI5zkanthavelu_uI5.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+	<App id="app">
+		<pages>
+			<Page title="Kanthavelu ui5">
+				<content>
+					<f:SimpleForm id="SimpleFormToolbar" editable="true" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="3" labelSpanM="4"
+						labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="4" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="1" columnsM="1"
+						singleContainerFullSize="false" ariaLabelledBy="Title1">
+						<f:content>
+							<Label text="Name"/>
+							<Input value="" id="name"/>
+							<Label text="Standard"/>
+							<Input value="" id="std"/>
+							<Label text="Section"/>
+							<Input value="" id="sec"/>
+							<Label text="Address"/>
+							<Input value="" id="addr"/>
+							<Label text="Contact Number"/>
+							<Input value="" id="ph"/>
+						</f:content>
+					</f:SimpleForm>
+					<Button text="submit" type="Default" press="onsubmit"></Button>
+					<Button text="Table" type="Default" press="onnext"></Button>
+					<Table id="idstudenttable" items="{/}">
+						<columns>
+							<Column width="12em">
+								<Text text="Name"/>
+							</Column>
+							<Column minScreenWidth="Tablet" demandPopin="true">
+								<Text text="Standard"/>
+							</Column>
+							<Column minScreenWidth="Desktop" demandPopin="true" hAlign="End">
+								<Text text="Section"/>
+							</Column>
+							<Column minScreenWidth="Desktop" demandPopin="true" hAlign="Center">
+								<Text text="Address"/>
+							</Column>
+							<Column hAlign="End">
+								<Text text="Contact Number"/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem vAlign="Middle">
+								<cells>
+									<Text text="{name}"/>
+									<Text text="{std}"/>
+									<Text text="{sec}"/>
+									<Text text="{addr}"/>
+									<Text text="{ph}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

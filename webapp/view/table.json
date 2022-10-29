@@ -1,0 +1,33 @@
+{
+	"student": [
+		{
+			"name": "kanthavelu",
+			"std": "5th",
+			"sec": "A",
+			"addr": "abc street",
+			"ph": "9042726438"
+        },
+		{
+			"name": "kiran",
+			"std": "7th",
+			"sec": "A",
+			"addr": "abcfr street",
+			"ph": "9042726454"
+
+        },
+		{
+			"name": "Ram",
+			"std": "7th",
+			"sec": "B",
+			"addr": "fgege street",
+			"ph": "90444545466"
+        },
+		{
+			"name": "Rajesh",
+			"std": "7th",
+			"sec": "D",
+			"addr": "abtrg street",
+			"ph": "9042726435"
+        }
+        ]
+}
